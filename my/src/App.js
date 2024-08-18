@@ -241,3 +241,23 @@ const styles = {
 };
 
 export default App;
+
+// สร้างองค์ประกอบ div สำหรับแถบล่าง
+var footer = document.createElement('div');
+
+// กำหนดข้อความในแถบล่าง
+footer.textContent = 'Copyright © 2024 Dormitory. All rights reserved';
+
+// เพิ่มสไตล์ให้กับแถบล่าง
+footer.style.position = 'absolute';   // ให้แถบล่างอยู่ที่ตำแหน่งล่างสุดของหน้า
+footer.style.bottom = '0';            // จัดตำแหน่งให้ติดล่างสุด
+footer.style.width = '100%';          // ให้แถบล่างเต็มความกว้างของหน้า
+footer.style.backgroundColor = '#2C3E50'; // สีพื้นหลังของแถบล่าง (สีกรมท่า)
+footer.style.color = '#FFFFFF';       // สีข้อความ (สีขาว)
+footer.style.textAlign = 'center';    // จัดข้อความให้อยู่กึ่งกลาง
+footer.style.padding = '10px 0';      // เพิ่มช่องว่างบนและล่างของข้อความ
+footer.style.fontFamily = 'Arial, sans-serif'; // กำหนดฟอนต์ของข้อความ
+footer.style.fontSize = '14px';       // กำหนดขนาดของฟอนต์
+
+// เพิ่ม footer ลงใน body ของหน้าเว็บ
+document.body.appendChild(footer);
